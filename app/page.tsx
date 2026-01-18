@@ -5,7 +5,7 @@ export default function Home() {
         {/* Header */}
         <header className="space-y-4">
           {/* Logo and Heading */}
-          <div className="flex items-center gap-4 sm:gap-6 justify-center flex-wrap">
+          <div className="flex items-center gap-4 sm:gap-6 justify-start flex-wrap">
             {/* Logo */}
             <div className="w-20 h-20 sm:w-24 sm:h-24 flex-shrink-0">
               <img 
@@ -15,7 +15,7 @@ export default function Home() {
               />
             </div>
             {/* Heading */}
-            <div className="space-y-1 text-center sm:text-left">
+            <div className="space-y-1 text-left">
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">
                 ASTRA HERITAGE
               </h1>
