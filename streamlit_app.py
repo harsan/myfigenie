@@ -173,7 +173,7 @@ def home_page():
     """, unsafe_allow_html=True)
     st.divider()
     if st.button("About the Founders"):
-    st.session_state.page = 'about'
+        st.session_state.page = 'about'
     st.rerun()
     st.divider()
 
