@@ -171,7 +171,7 @@ def home_page():
     <small>AstraHeritage provides educational guidance only and does not give
     individualized financial, legal, or tax advice.</small>
     """, unsafe_allow_html=True)
-    st.divider()
+    
     if st.button("About the Founders"):
         st.session_state.page = 'about'
         st.rerun()
