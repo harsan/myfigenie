@@ -212,6 +212,22 @@ def profile_page():
             }
             st.session_state.page = 'dashboard'
             st.rerun()
+def about_page():
+    """Founders / About Page within the main app"""
+    if st.button("← Back to main page"):
+        st.session_state.page = 'home'
+        st.rerun()
+        
+    st.markdown("# Our Leadership")
+    col1, col2 = st.columns(2)
+    with col1:
+        st.subheader("Harsan Singh")
+        st.info("**Founder & CTO**")
+        st.write("Harsan Singh heads the technology, architecture and development of our AI-driven core, ensuring the engine behind your financial checkup is both powerful and secure.")
+    with col2:
+        st.subheader("Andy Singh")
+        st.info("**Product & UX Manager**")
+        st.write(" Andy Singh ensures the platform addresses real-world complexities like 529 college savings and sustainable retirement paths.")
 
 def dashboard_page():
     """Dashboard page"""
