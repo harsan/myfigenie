@@ -172,7 +172,7 @@ def home_page():
     individualized financial, legal, or tax advice.</small>
     """, unsafe_allow_html=True)
     
-    if st.button("About the Founders"):
+    if st.button("About Us"):
         st.session_state.page = 'about'
         st.rerun()
     st.divider()
