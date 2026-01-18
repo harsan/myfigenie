@@ -10,6 +10,10 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="collapsed"
 )
+if st.button("About the Founders"):
+    st.session_state.page = 'about'
+    st.rerun()
+st.divider()
 
 # Custom CSS for styling
 st.markdown("""
@@ -333,3 +337,5 @@ elif st.session_state.page == 'profile':
     profile_page()
 elif st.session_state.page == 'dashboard':
     dashboard_page()
+elif st.session_state.page == 'about':  # ADD THIS
+    about_page()
