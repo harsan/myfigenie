@@ -5,7 +5,7 @@ from openai import OpenAI
 
 # Page configuration
 st.set_page_config(
-    page_title="AstraHeritage",
+    page_title="AstraHeritage | Wealth Simulator",
     page_icon="💰",
     layout="wide",
     initial_sidebar_state="collapsed"
