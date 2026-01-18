@@ -174,7 +174,7 @@ def home_page():
     st.divider()
     if st.button("About the Founders"):
         st.session_state.page = 'about'
-    st.rerun()
+    
     st.divider()
 
     # NEW: Add your trademark and LLC footer
