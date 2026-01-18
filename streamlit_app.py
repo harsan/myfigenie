@@ -145,7 +145,7 @@ def home_page():
         st.markdown("**Advanced Intelligence. Enduring Heritage.**")
     # NEW: Add the About link here
     if st.button("About the Founders", variant="ghost"):
-        st.switch_page("about.py")
+        st.switch_page("pages/about.py")
 
     st.markdown("""
     An AI-powered financial guide that helps you make smarter decisions
