@@ -143,7 +143,9 @@ def home_page():
     with col2:
         st.markdown("## ASTRA HERITAGE")
         st.markdown("**Advanced Intelligence. Enduring Heritage.**")
-    
+    # NEW: Add the About link here
+    st.markdown("[About the Founders](/about)")
+
     st.markdown("""
     An AI-powered financial guide that helps you make smarter decisions
     about retirement, housing, college planning, and investments—without
@@ -171,6 +173,9 @@ def home_page():
     <small>AstraHeritage provides educational guidance only and does not give
     individualized financial, legal, or tax advice.</small>
     """, unsafe_allow_html=True)
+    st.divider()
+    # NEW: Add your trademark and LLC footer
+    st.caption("© 2026 Astra Heritage Holdings LLC. Astra Heritage™ is a registered trademark.")
 
 def profile_page():
     """Profile form page"""
