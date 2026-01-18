@@ -1,7 +1,10 @@
 import streamlit as st
 
 st.set_page_config(page_title="About Us | Astra Heritage", page_icon="⚖️")
-
+# inside pages/about.py
+if st.button("← Back to Simulator"):
+    st.switch_page("streamlit_app.py")
+st.divider()
 st.markdown("# Our Leadership")
 st.markdown("Astra Heritage Holdings LLC was founded to simplify wealth management through the responsible use of Artificial Intelligence.")
 
