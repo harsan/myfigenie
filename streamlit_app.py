@@ -144,7 +144,7 @@ def home_page():
         st.markdown("## ASTRA HERITAGE")
         st.markdown("**Advanced Intelligence. Enduring Heritage.**")
     # NEW: Add the About link here
-    if st.button("About the Founders", variant="ghost"):
+    if st.button("About the Founders"):
         st.switch_page("pages/about.py")
 
     st.markdown("""
