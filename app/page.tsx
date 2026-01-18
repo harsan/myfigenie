@@ -1,12 +1,18 @@
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white text-slate-900 flex items-center justify-center px-6">
+    <main className="min-h-screen bg-white text-slate-900 flex flex-col items-center justify-center px-6 py-12">
       <div className="max-w-3xl w-full space-y-10">
+        
+        {/* Navigation / About Link */}
+        <nav className="flex justify-end">
+          <a href="/pages/about" className="text-sm font-medium text-emerald-600 hover:text-emerald-700 underline underline-offset-4">
+            About the Founders
+          </a>
+        </nav>
+
         {/* Header */}
         <header className="space-y-4">
-          {/* Logo and Heading */}
           <div className="flex items-center gap-4 sm:gap-6 justify-start flex-wrap">
-            {/* Logo */}
             <div className="w-20 h-20 sm:w-24 sm:h-24 flex-shrink-0">
               <img 
                 src="/astraheritage-logo.jpg" 
@@ -14,7 +20,6 @@ export default function Home() {
                 className="w-full h-full object-contain"
               />
             </div>
-            {/* Heading */}
             <div className="space-y-1 text-left">
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">
                 ASTRA HERITAGE
@@ -31,7 +36,7 @@ export default function Home() {
           </p>
         </header>
 
-        {/* Benefits */}
+        {/* Benefits Section */}
         <section className="space-y-3">
           <h2 className="text-lg font-semibold">What AstraHeritage will help you with:</h2>
           <ul className="list-disc list-inside text-slate-700 space-y-2 text-sm sm:text-base">
@@ -56,11 +61,17 @@ export default function Home() {
           </button>
         </div>
 
-        {/* Disclaimer */}
-        <p className="text-[11px] sm:text-xs text-slate-600">
-          AstraHeritage provides educational guidance only and does not give
-          individualized financial, legal, or tax advice.
-        </p>
+        {/* Footer with Trademark & Disclaimer */}
+        <footer className="pt-10 border-t border-slate-100 space-y-4">
+          <p className="text-[11px] sm:text-xs text-slate-600">
+            AstraHeritage provides educational guidance only and does not give
+            individualized financial, legal, or tax advice.
+          </p>
+          <p className="text-[10px] sm:text-[11px] text-slate-400 font-medium uppercase tracking-widest">
+            © 2026 Astra Heritage Holdings LLC. All Rights Reserved. 
+            Astra Heritage™ is a registered trademark of Astra Heritage Holdings LLC.
+          </p>
+        </footer>
       </div>
     </main>
   );
