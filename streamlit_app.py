@@ -143,8 +143,6 @@ def home_page():
     with col2:
         st.markdown("## ASTRA HERITAGE")
         st.markdown("**Advanced Intelligence. Enduring Heritage.**")
-    # NEW: Add the About link here
-    st.page_link("pages/about.py", label="About the Founders", icon="👥")
 
     st.markdown("""
     An AI-powered financial guide that helps you make smarter decisions
