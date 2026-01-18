@@ -224,12 +224,12 @@ def about_page():
     st.markdown("# Our Leadership")
     col1, col2 = st.columns(2)
     with col1:
-        st.image("public/harsan.jpg", width=250) 
+        st.image("public/harsan.jpg", width=200) 
         st.subheader("Harsan Singh")
         st.info("**Founder & CTO**")
         st.write("Harsan Singh heads the technology, architecture and development of our AI-driven core, ensuring the engine behind your financial checkup is both powerful and secure.")
     with col2:
-        st.image("public/andy.jpg", width=250)
+        st.image("public/andy.jpg", width=200)
         st.subheader("Andy Singh")
         st.info("**Product & UX Manager**")
         st.write(" Andy Singh ensures the platform addresses real-world complexities like 529 college savings and sustainable retirement paths.")
