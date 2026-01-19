@@ -224,15 +224,15 @@ def about_page():
     st.markdown("# Our Leadership")
     col1, col2 = st.columns(2)
     with col1:
-        st.image("public/harsan.jpg", width=130) 
-        st.subheader("Harsan Singh")
-        st.info("**Founder & CTO**")
+        # standardizing width and using a container for text alignment
+        st.image("public/harsan.jpg", width=230)
+        st.markdown("<div style='min-height: 100px;'><h3>Harsan Singh</h3><p style='color: #007bff; font-weight: bold;'>Founder & CTO</p></div>", unsafe_allow_html=True)
         st.write("Harsan Singh heads the technology, architecture and development of our AI-driven core, ensuring the engine behind your financial checkup is both powerful and secure.")
+
     with col2:
-        st.image("public/andy.jpg", width=130)
-        st.subheader("Andy Singh")
-        st.info("**Product & UX Manager**")
-        st.write(" Andy Singh ensures the platform addresses real-world complexities like 529 college savings and sustainable retirement paths.")
+        st.image("public/andy.jpg", width=230)
+        st.markdown("<div style='min-height: 100px;'><h3>Andy Singh</h3><p style='color: #007bff; font-weight: bold;'>Product & UX Manager</p></div>", unsafe_allow_html=True)
+        st.write("Andy Singh ensures the platform addresses real-world complexities like 529 college savings and sustainable retirement paths.")
 
 def dashboard_page():
     """Dashboard page"""
